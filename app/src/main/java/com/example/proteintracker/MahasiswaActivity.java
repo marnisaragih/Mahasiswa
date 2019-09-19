@@ -44,7 +44,7 @@ public class MahasiswaActivity extends AppCompatActivity {
         bsimpan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String inputnpm = String.valueOf(enim.getText().toString());
+                String inputnim = String.valueOf(enim.getText().toString());
                 String inputnama = String.valueOf(enama.getText().toString());
                 String inputtempatlahir = String.valueOf(etempatlahir.getText().toString());
                 String inputtanggallahir = String.valueOf(etanggallahir.getText().toString());
@@ -53,7 +53,7 @@ public class MahasiswaActivity extends AppCompatActivity {
                 RadioButton jk = (RadioButton) findViewById(gender);
                 String inputjk = String.valueOf(jk.getText().toString());
 
-                thasil.setText("\n" + "NIM\t\t\t\t\t\t\t\t\t\t\t: " + inputnpm + "\n" +
+                thasil.setText("\n" + "NIM\t\t\t\t\t\t\t\t\t\t\t: " + inputnim + "\n" +
                         "Nama\t\t\t\t\t\t\t\t\t\t: " + inputnama + "\n" +
                         "Jenis Kelamin\t\t: " + inputjk + "\n" +
                         "Agama\t\t\t\t\t\t\t\t\t: " + sagama.getSelectedItem().toString() + "\n" +
@@ -65,5 +65,3 @@ public class MahasiswaActivity extends AppCompatActivity {
     }
 }
 
-    }
-}
