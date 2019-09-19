@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MahasiswaActivity">
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="18dp"
+        android:text="NIM\t\t:"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/isinpm"
+        android:layout_width="206dp"
+        android:layout_height="39dp"
+        android:hint="Masukan NIM"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="24dp"
+        android:text="Nama\t\t:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <EditText
+        android:id="@+id/isinama"
+        android:layout_width="148dp"
+        android:layout_height="39dp"
+        android:hint="Masukan Nama"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <TextView
+        android:layout_width="373dp"
+        android:layout_height="34dp"
+        android:text="Agama\t\t\t\t\t:"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <Spinner
+        android:id="@+id/agama"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:entries="@+array/pilihagama"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="124dp"></Spinner>
+
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="27dp"
+        android:text="Tempat Lahir\t:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+    <EditText
+        android:id="@+id/tempatlahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Tempat Lahir"
+        android:text=""
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:text="Tanggal Lahir\t:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <EditText
+        android:id="@+id/tanggallahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="dd/MM/yyyy"
+        android:text=""
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <TextView
+        android:layout_width="121dp"
+        android:layout_height="34dp"
+        android:text="Jenis Kelamin\t:"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <RadioGroup
+        android:id="@+id/jk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="212dp">
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIMPAN"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perempuan"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki - laki"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="===== HASIL INPUT ====="
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="497dp" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
